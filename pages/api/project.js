@@ -1,7 +1,7 @@
 import project from "./project.json";
 
 export const getProjects = () => {
-  return [];
+  return project;
 };
 
 export default (req, res) => {
