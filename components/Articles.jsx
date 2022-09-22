@@ -17,11 +17,6 @@ const Articles = ({ articles }) => {
               ))}
             </div>
             <p className="text-sm text-gray-500 mt-2">{article?.description}</p>
-            <Link href={article?.url}>
-              <button className="bg-gray-800 px-6 mt-3 rounded py-1 text-sm">
-                View
-              </button>
-            </Link>
           </div>
         </div>
       ))}

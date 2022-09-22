@@ -4,8 +4,6 @@
       "name": "Insight",
       "description": "Built for Sfeir clients to keep an eye on the KPI of their projects",
       "image": "https://i.imgur.com/2g7luWF.png",
-      "live": "https://healthyways.herokuapp.com",
-      "source": "https://github.com/itsnitinr/healthyways",
       "tags": ["next", "redux", "strapi", "graphql", "material-ui"]
     },
     {
@@ -13,8 +11,6 @@
       "name": "Tambour Horizon Light Up",
       "description": "Backend development of the LV Smartwatch",
       "image": "https://i.imgur.com/UlZZ0i5.jpg",
-      "live": "https://canteen-manage-system.herokuapp.com/",
-      "source": "https://github.com/unnati2000/canteen-management",
       "tags": ["node", "express", "vue", "gcp", "heroku", "aws", "redis", "psql"]
     },
     {
@@ -22,8 +18,6 @@
       "name": "TotalEnergies Solar Mapper",
       "description": "Google earth engine based tool to estimate the solar potential of people's residence",
       "image": "https://i.imgur.com/KeTnrfU.jpg",
-      "live": "https://canteen-manage-system.herokuapp.com/",
-      "source": "https://github.com/unnati2000/canteen-management",
       "tags": ["react", "typescript", "redux", "google-earth", "google-maps"]
     },
     {
@@ -31,8 +25,6 @@
       "name": "Le Cèdre",
       "description": "Built for Le Cèdre affiliates to get market recommandations",
       "image": "https://i.imgur.com/T39Xq44.jpg",
-      "live": "https://canteen-manage-system.herokuapp.com/",
-      "source": "https://github.com/unnati2000/canteen-management",
       "tags": ["angular", "typescript", "redux", "cypress"]
     },
     {
@@ -40,8 +32,6 @@
       "name": "Selligent Monitoring System",
       "description": "Built for marketers who wish to get alerted on their failed campaigns",
       "image": "https://i.imgur.com/CbNRUVf.png",
-      "live": "https://canteen-manage-system.herokuapp.com/",
-      "source": "https://github.com/unnati2000/canteen-management",
       "tags": ["selligent", "html", "css"]
     },
     {
@@ -49,8 +39,6 @@
       "name": "Github Portfolio",
       "description": "Developed to display my resume online",
       "image": "https://i.imgur.com/zcHpLC5.png",
-      "live": "https://new-project-310316.web.app/",
-      "source": "https://github.com/unnati2000/property-website",
       "tags": ["next", "firebase", "tailwindcss"]
     }
   ]
