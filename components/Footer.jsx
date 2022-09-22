@@ -4,20 +4,20 @@ const Footer = () => {
   return (
     <div className="flex flex-wrap items-center space-x-1 space-y-2 justify-evenly text-xs text-[#59A6FF] py-8">
       <p className="text-gray-500 text-xs">© 2022 GitHub, Inc.</p>
-      <a href="">Terms</a>
-      <a href="">Privacy</a>
-      <a href="">Security</a>
-      <a href="">Status</a>
-      <a href="">Docs</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Security</a>
+      <a href="#">Status</a>
+      <a href="#">Docs</a>
 
       <AiFillGithub className="text-2xl text-gray-600 hidden md:block" />
 
-      <a href="">Contact Github</a>
-      <a href="">Pricing</a>
-      <a href="">API</a>
-      <a href="">Training</a>
-      <a href="">Blog</a>
-      <a href="">About</a>
+      <a href="#">Contact Github</a>
+      <a href="#">Pricing</a>
+      <a href="#">API</a>
+      <a href="#">Training</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
     </div>
   );
 };
