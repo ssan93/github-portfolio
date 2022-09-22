@@ -4,16 +4,15 @@ import Image from "next/image";
 const Profile = ({ user }) => {
   return (
     <div>
-      <section className="border p-3 rounded border-gray-700 my-6 ">
-        <p className="text-gray-300 text-xs mt-4">
+      <section className="border p-3 rounded border-gray-700 my-6">
+        <p className="text-gray-300 text-xs my-4">
           ssan93 / README.<span className="text-gray-500">md</span>
         </p>
-        <h2 align='center'>Steven San @ ssan93</h2>
+        <img className="mb-2" src="https://i.imgur.com/DmIYUON.png" alt="Steven-banner"/>
+        
         <p align='center'><b>5th-year Computer Science Student at UTBM at Belfort</b></p> 
         <p align='center'>Looking for a 3-month internship from February to May 2023</p> 
-
-
-        <h1 className="text-gray-300 font-semibold text-2xl mt-3 ">Hey! 
+        {/* <h1 className="text-gray-300 font-semibold text-2xl mt-3 ">Hey! 
           <img 
               className="inline align-bottom mx-1"
               src="./Hi.gif"
@@ -28,7 +27,7 @@ const Profile = ({ user }) => {
         <p className="text-gray-300  text-sm mt-3">
           Fast learner, hard worker and passionate about web engineering, I am highly motivated and proficient in developing databases,
           creating user interfaces and in programming languages like React or Angular.
-        </p>
+        </p> */}
         <div className="border-b mt-2 border-gray-900"></div>
         {/* <Image
           className="mt-5 hidden md:block"
@@ -37,7 +36,7 @@ const Profile = ({ user }) => {
           src="https://i.imgur.com/AISkwEs.png"
         /> */}
 
-        <h2 className="mt-6 text-xl font-semibold text-gray-300">
+        {/* <h2 className="mt-6 text-xl font-semibold text-gray-300">
           Languages and Tools:
         </h2>
         <br/>
@@ -83,42 +82,14 @@ const Profile = ({ user }) => {
               <a href="https://github.com/" target="_blank"><img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github" /></a>
               <a href="https://gitlab.com/" target="_blank"><img src="https://img.shields.io/badge/-Gitlab-ef9b24?style=flat-square&logo=gitlab&logoColor=white" /></a>
           </div>
-        </div>
+        </div> */}
 
 
-        <img
+        {/* <img
           className="mt-6"
           src="https://github-readme-stats.vercel.app/api?username=ssan93&&show_icons=true&title_color=ffffff&icon_color=bb2acf&text_color=daf7dc&bg_color=151515"
-        />
+        /> */}
       </section>
-      <div className="mt-20 hidden md:block">
-        <GitHubCalendar
-          username="ssan93"
-          theme={{
-            level0: "#161B22",
-            level1: "#0e4429",
-            level2: "#006d32",
-            level3: "#26a641",
-            level4: "#39d353",
-          }}
-        />
-      </div>
-
-      <div className="mt-20 block md:hidden">
-        <GitHubCalendar
-          username="ssan93"
-          theme={{
-            level0: "#161B22",
-            level1: "#0e4429",
-            level2: "#006d32",
-            level3: "#26a641",
-            level4: "#39d353",
-          }}
-          blockMargin={0}
-          blockSize={7}
-          blockRadius={0}
-        />
-      </div>
     </div>
   );
 };
