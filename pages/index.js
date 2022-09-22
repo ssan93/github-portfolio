@@ -138,13 +138,13 @@ const HomePage = ({ user, repo, projects }) => {
 export async function getStaticProps() {
   const userRes = await fetch(
     `https://api.github.com/users/ssan93`,
-    { my_client_id:process.env.GIT_CLIENT_ID }
+    { client_id:process.env.GIT_CLIENT_ID }
   );
   const user = await userRes.json();
 
   const repoRes = await fetch(
     `https://api.github.com/users/ssan93/repos?sort=created_at&per_page=10`, 
-    { my_client_id:process.env.GIT_CLIENT_ID }
+    { client_id:process.env.GIT_CLIENT_ID }
   );
   const repo = await repoRes.json();
 
