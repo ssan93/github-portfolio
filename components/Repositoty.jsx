@@ -5,7 +5,6 @@ import { AiOutlineEye } from "react-icons/ai";
 const Repositoty = ({ repo }) => {
   return (
     <section className="mt-4 border border-gray-900 text-gray-900">
-      {console.log(repo)}
       <div className="flex items-center mt-2">
         <input
           type="text"

@@ -6,7 +6,7 @@ import { AiOutlineEye } from "react-icons/ai";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border h-100 border-gray-700 rounded flex flex-col justify-between	" key={project?.id}>
+    <div className="border h-100 border-gray-700 rounded flex flex-col justify-between	">
       <div>
       <Image src={project?.image} width="500" height="300" />
       <h2 className="text-gray-300 font-semibold text-xl px-2 py-2 sm:text-lg">
@@ -15,8 +15,8 @@ const ProjectCard = ({ project }) => {
       <p className="text-gray-600 text-sm px-2">{project?.description}</p>
       </div>
       <div className="flex items-center px-2 py-2">
-        {project?.tags?.map((tag) => (
-          <Icons tag={tag} />
+        {project?.tags?.map((tag, ind) => (
+          <Icons key={ind} tag={tag} />
         ))}
       </div>
     </div>

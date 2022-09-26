@@ -24,19 +24,28 @@ const HomePage = ({ user, repo, projects }) => {
       </Head>
       <div className="bg-[#0d1117] min-h-screen">
         <Navbar />
-        <div className="container md:flex-nowrap text-gray-100 mx-auto py-10 md:px-16 px-0  flex flex-wrap">
-          <div className="md:w-1/4 w-100">
-            <Sidebar user={user} />
+        <div className="container md:flex-nowrap text-gray-100 mx-auto py-10 lg:px-16 px-0  flex flex-wrap">
+        {tab === "profile" ? <></> :
+          <div className="md:w-1/4 w-100 mx-auto md:mx-0">
+             <Sidebar user={user} /> 
           </div>
-          <div className="md:3/4 w-100 px-2 w-full md:overflow-hidden">
-            <nav className="flex bg-[#0d1117] sticky top-0 z-[1] lg:space-x-6 md:space-x-3 sm:space-x-0 items-center">
-              <div>
+        }
+        
+          <div className = {
+            tab === "profile"
+              ? "md:3/4 w-100 xl:max-w-[90%] mx-auto"
+              : "md:3/4 w-100 max-w-[75%] mx-auto md:mx-0"
+          }>
+            <div className="flex">
+          {tab === "profile" ? <div className="md:w-1/4 w-100 h-1"></div> : <></>}
+            <nav className="mx-auto md:mx-0 flex bg-[#0d1117] sticky top-0 z-[1] pt-6 md:pt-2 lg:space-x-6 md:space-x-3 sm:space-x-0 justify-center flex-wrap">
+              <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("profile")}
                   className="flex items-center px-1 text-gray-300 text-sm"
                 >
                   <BsBook className="mr-2 text-gray-600 hidden md:block" />
-                  <p className={tab === "profile" && "font-semibold"}>
+                  <p className={tab === "profile" && "font-semibold" || ""}>
                     Overview
                   </p>
                 </button>
@@ -49,7 +58,7 @@ const HomePage = ({ user, repo, projects }) => {
                   }
                 ></div>
               </div>
-              <div>
+              <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("repositories")}
                   className="flex items-center px-1 text-gray-300 text-sm"
@@ -57,7 +66,7 @@ const HomePage = ({ user, repo, projects }) => {
                   <RiBookMarkFill className="mr-2 text-gray-600 hidden md:block" />
                   <p className="text-sm">
                     Repositories
-                    <span className="inline-flex items-center justify-center px-2 py-1 ml-1 mr-2 text-xs font-bold leading-none text-gray-300 bg-gray-700 rounded-full">
+                    <span className="inline-flex items-center justify-center px-2 py-1 ml-1 text-xs font-bold leading-none text-gray-300 bg-gray-700 rounded-full">
                       {user?.public_repos}
                     </span>
                   </p>
@@ -71,7 +80,7 @@ const HomePage = ({ user, repo, projects }) => {
                 ></div>
               </div>
 
-              <div>
+              <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("projects")}
                   className="flex items-center px-1 text-gray-300 text-sm"
@@ -104,7 +113,7 @@ const HomePage = ({ user, repo, projects }) => {
                 ></div>
               </div> */}
 
-              <div>
+              <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("contact-me")}
                   className="flex justify-center items-center px-1 text-gray-300 text-sm"
@@ -121,7 +130,7 @@ const HomePage = ({ user, repo, projects }) => {
                 ></div>
               </div>
             </nav>
-
+            </div>
             {tab === "profile" && <Profile user={user} />}
             {tab === "repositories" && <Repositoty repo={repo} />}
             {tab === "projects" && <Project projects={projects} />}
