@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Profile from "../components/Profile";
 import Project from "../components/Project";
+import AboutMe from "../components/AboutMe";
 import Repositoty from "../components/Repositoty";
 import ContactMe from "../components/ContactMe";
-import { BsBook } from "react-icons/bs";
+import { BsBook, BsPersonCheck } from "react-icons/bs";
 import { RiBookMarkFill } from "react-icons/ri";
 import { AiOutlineProject, AiOutlineMail } from "react-icons/ai";
 import { getProjects } from "../pages/api/project";
-import { SiWriteDotAs } from "react-icons/si";
 import Footer from "../components/Footer";
 import Head from "next/head";
 
@@ -38,7 +38,7 @@ const HomePage = ({ user, repo, projects }) => {
           }>
             <div className="flex">
           {tab === "profile" ? <div className="md:w-1/4 w-100 h-1"></div> : <></>}
-            <nav className="mx-auto md:mx-0 flex bg-[#0d1117] sticky top-0 z-[1] pt-6 md:pt-2 lg:space-x-6 md:space-x-3 sm:space-x-0 justify-center flex-wrap">
+            <nav className="md:mx-0 flex bg-[#0d1117] sticky top-0 z-[1] pt-6 md:pt-2 lg:space-x-6 md:space-x-3 sm:space-x-0 justify-center flex-wrap">
               <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("profile")}
@@ -58,6 +58,25 @@ const HomePage = ({ user, repo, projects }) => {
                   }
                 ></div>
               </div>
+              <div className="mx-2 md:mx-0 my-1 md:my-0">
+                <button
+                  onClick={() => setTab("about-me")}
+                  className="flex items-center px-1 text-gray-300 text-sm"
+                >
+                  <BsPersonCheck className="mr-2 text-gray-600 hidden md:block" />
+                  <p className="text-sm">
+                    About Me
+                  </p>
+                </button>
+                <div
+                  className={
+                    tab === "about-me"
+                      ? "border-b-2 w-100 border-[#f78166] mt-2"
+                      : "border-b-2 w-100 border-transparent mt-2"
+                  }
+                ></div>
+              </div>
+
               <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("repositories")}
@@ -132,6 +151,7 @@ const HomePage = ({ user, repo, projects }) => {
             </nav>
             </div>
             {tab === "profile" && <Profile user={user} />}
+            {tab === "about-me" && <AboutMe user={user} />}
             {tab === "repositories" && <Repositoty repo={repo} />}
             {tab === "projects" && <Project projects={projects} />}
             {tab === "contact-me" && <ContactMe />}
