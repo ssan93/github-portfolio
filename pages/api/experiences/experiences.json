@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Fullstack Developer",
+      "description": "Developed services on several client projects",
+      "image": "https://i.imgur.com/mJhjpFH.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Technical Project Manager",
+      "description": "Accompanied clients on their automated marketing campaigns",
+      "image": "https://i.imgur.com/hQYDAae.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Office Manager",
+      "description": "Administration, reception and accounting",
+      "image": "https://i.imgur.com/H5HB2R0.jpg"
+    }
+  ]

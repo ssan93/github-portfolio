@@ -1,7 +1,7 @@
-import project from "./project.json";
+import projects from "./projects.json";
 
 export const getProjects = () => {
-  return project;
+  return projects;
 };
 
 export default (req, res) => {

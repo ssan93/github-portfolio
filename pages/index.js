@@ -3,17 +3,19 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Profile from "../components/Profile";
 import Project from "../components/Project";
+import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
 import Repositoty from "../components/Repositoty";
 import ContactMe from "../components/ContactMe";
 import { BsBook, BsPersonCheck } from "react-icons/bs";
 import { RiBookMarkFill } from "react-icons/ri";
 import { AiOutlineProject, AiOutlineMail } from "react-icons/ai";
-import { getProjects } from "../pages/api/project";
+import { getProjects } from "./api/projects/projects";
+import { getExperiences } from "./api/experiences/experiences";
 import Footer from "../components/Footer";
 import Head from "next/head";
 
-const HomePage = ({ user, repo, projects }) => {
+const HomePage = ({ user, repo, projects, experiences }) => {
   const [tab, setTab] = useState("profile");
 
   return (
@@ -77,7 +79,7 @@ const HomePage = ({ user, repo, projects }) => {
                 ></div>
               </div>
 
-              <div className="mx-2 md:mx-0 my-1 md:my-0">
+              {/* <div className="mx-2 md:mx-0 my-1 md:my-0">
                 <button
                   onClick={() => setTab("repositories")}
                   className="flex items-center px-1 text-gray-300 text-sm"
@@ -93,6 +95,28 @@ const HomePage = ({ user, repo, projects }) => {
                 <div
                   className={
                     tab === "repositories"
+                      ? "border-b-2 w-100 border-[#f78166] mt-2"
+                      : "border-b-2 w-100 border-transparent mt-2"
+                  }
+                ></div>
+              </div> */}
+
+              <div className="mx-2 md:mx-0 my-1 md:my-0">
+                <button
+                  onClick={() => setTab("experiences")}
+                  className="flex items-center px-1 text-gray-300 text-sm"
+                >
+                  <RiBookMarkFill className="mr-2 text-gray-600 hidden md:block" />
+                  <p className="text-sm">
+                    Experiences
+                    <span className="inline-flex items-center justify-center px-2 py-1 ml-1 text-xs font-bold leading-none text-gray-300 bg-gray-700 rounded-full">
+                      {experiences?.length}
+                    </span>
+                  </p>
+                </button>
+                <div
+                  className={
+                    tab === "experiences"
                       ? "border-b-2 w-100 border-[#f78166] mt-2"
                       : "border-b-2 w-100 border-transparent mt-2"
                   }
@@ -152,7 +176,8 @@ const HomePage = ({ user, repo, projects }) => {
             </div>
             {tab === "profile" && <Profile user={user} />}
             {tab === "about-me" && <AboutMe user={user} />}
-            {tab === "repositories" && <Repositoty repo={repo} />}
+            {/* {tab === "repositories" && <Repositoty repo={repo} />} */}
+            {tab === "experiences" && <Experience experiences={experiences} />}
             {tab === "projects" && <Project projects={projects} />}
             {tab === "contact-me" && <ContactMe />}
           </div>
@@ -178,9 +203,10 @@ export async function getStaticProps() {
   const repo = await repoRes.json();
 
   const projects = await getProjects();
+  const experiences = await getExperiences();
 
   return {
-    props: { user, repo, projects },
+    props: { user, repo, projects, experiences },
   };
 }
 export default HomePage;
