@@ -22,7 +22,7 @@ const AboutMe = ({ user }) => {
         <div className="border-b mt-2 border-gray-900"></div>
         <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center md:text-left">Languages</h1>
         <div className="w-full flex flex-wrap flex-row justify-center my-5">
-          <ul className="ch-grid">
+          <ul className="ch-grid text-center md:text-left">
             <li>
               <div className="circle"> 
                 <div className="mask half">
