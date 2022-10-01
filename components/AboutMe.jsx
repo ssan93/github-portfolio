@@ -33,7 +33,7 @@ const AboutMe = ({ user }) => {
                 </div>
                 <div className="bg-[#0d1117] w-5/6 h-5/6 rounded-full absolute mt-[8%] ml-[8%]"> </div>
                 <img src="https://i.imgur.com/nQyqtUh.png" alt="france icon" className="w-6/12 absolute top-1/4 left-1/4"/>
-                <div className="ch-info scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md ">
+                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md ">
                   <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">Native Language</h3>
                   <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">French</p>
                 </div>
@@ -50,7 +50,7 @@ const AboutMe = ({ user }) => {
                 </div>
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/KG20MJ3.png" alt="england icon" className="w-6/12 absolute top-1/4 left-1/4"/>
-                <div className="ch-info scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
+                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
                   <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">C1 Certified</h3>
                   <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">English</p>
                 </div>
@@ -66,7 +66,7 @@ const AboutMe = ({ user }) => {
                 </div>
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/sTSaobq.png" alt="china icon" className="w-6/12 absolute top-1/4 left-1/4"/>
-                <div className="ch-info scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
+                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
                   <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">Mother Tongue</h3>
                   <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">Chinese</p>
                 </div>
@@ -82,7 +82,7 @@ const AboutMe = ({ user }) => {
                 </div>
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/wiROvS0.png" alt="spain icon" className="w-6/12 absolute top-1/4 left-1/4"/>
-                <div className="ch-info scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
+                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
                   <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">B1 scholar level</h3>
                   <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] text-[12px] border-t-2 p-1.5 mx-5">Spanish</p>
                 </div>
@@ -98,8 +98,8 @@ const AboutMe = ({ user }) => {
                 </div>
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/kyaEkV1.png" alt="japan icon" className="w-6/12 absolute top-1/4 left-1/4"/>
-                <div className="ch-info scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">Actively studying since sep '22</h3>
+                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
+                  <h3 className="uppercase pt-4 mx-6 text-[12px] tracking-[.125em]">Actively studying since sep '22</h3>
                   <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">Japanese</p>
                 </div>
               </div>
