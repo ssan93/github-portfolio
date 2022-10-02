@@ -20,9 +20,10 @@ const AboutMe = ({ user }) => {
           creating user interfaces and in programming languages like React or Angular.
         </p>
         <div className="border-b mt-2 border-gray-900"></div>
-        <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center md:text-left">Languages</h1>
+        <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center lg:text-left">Languages</h1>
+        <h2 className="text-gray-400 text-sm text-center md:hidden">(Click to see more)</h2>
         <div className="w-full flex flex-wrap flex-row justify-center my-5">
-          <ul className="ch-grid text-center md:text-left">
+          <ul className="ch-grid text-center lg:text-left">
             <li>
               <div className="circle"> 
                 <div className="mask half">
