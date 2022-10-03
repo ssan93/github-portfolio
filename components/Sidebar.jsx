@@ -35,11 +35,6 @@ const Sidebar = ({ user }) => {
           <h1 className="mt-4 text-2xl font-semibold text-gray-300">
             {user?.name}
           </h1>
-          <Link href={user?.html_url}>
-            <h4 className="text-gray-400 font-thin text-lg leading-4">
-              {user?.login}
-            </h4>
-          </Link>
         </div>
       </div>
 
