@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext, createContext } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Profile from "../components/Profile";
@@ -14,9 +14,31 @@ import { getProjects } from "./api/projects/projects";
 import { getExperiences } from "./api/experiences/experiences";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import LanguageProvider from "../components/Language/LanguageProvider";
+import LanguageSelector from "../components/Language/LanguageSelector";
+import en from '../ressources/traductions/english.json';
+import fr from '../ressources/traductions/french.json';
 
 const HomePage = ({ user, repo, projects, experiences }) => {
   const [tab, setTab] = useState("profile");
+
+  const dictionaryList = { en, fr };
+
+  const LanguageContext = createContext({
+    userLanguage: 'en',
+    dictionary: dictionaryList.en
+  });
+
+  const languageOptions = {
+    en: 'English',
+    fr: 'French'
+  };
+  
+  // get text according to id & current language
+  function Text({ tid }) {
+    const languageContext = useContext(LanguageContext);
+    return languageContext.dictionary[tid] || tid;
+  };
 
   return (
     <>
@@ -25,11 +47,18 @@ const HomePage = ({ user, repo, projects, experiences }) => {
         <link rel="icon" href="https://github.com/ssan93.png" />
       </Head>
       <div className="bg-[#0d1117] min-h-screen">
-        <Navbar />
+        <Navbar Text={Text}/>
+        <LanguageProvider LanguageContext={LanguageContext} dictionaryList={dictionaryList} languageOptions={languageOptions}>
+          <div className="App">
+            <header className="App-header">
+              <LanguageSelector LanguageContext={LanguageContext} languageOptions={languageOptions}/>
+            </header>
+          </div>
+
         <div className="container md:flex-nowrap text-gray-100 mx-auto py-10 lg:px-16 px-0  flex flex-wrap">
         {tab === "profile" ? <></> :
           <div className="md:w-1/4 w-100 mx-auto md:mx-0">
-             <Sidebar user={user} /> 
+             <Sidebar user={user} Text={Text} /> 
           </div>
         }
         
@@ -48,7 +77,7 @@ const HomePage = ({ user, repo, projects, experiences }) => {
                 >
                   <BsBook className="mr-2 text-gray-600 hidden md:block" />
                   <p className={tab === "profile" && "font-semibold" || ""}>
-                    Overview
+                  <Text tid="overview" />
                   </p>
                 </button>
 
@@ -67,7 +96,7 @@ const HomePage = ({ user, repo, projects, experiences }) => {
                 >
                   <BsPersonCheck className="mr-2 text-gray-600 hidden md:block" />
                   <p className="text-sm">
-                    About Me
+                    <Text tid="aboutMe" />
                   </p>
                 </button>
                 <div
@@ -108,7 +137,7 @@ const HomePage = ({ user, repo, projects, experiences }) => {
                 >
                   <RiBookMarkFill className="mr-2 text-gray-600 hidden md:block" />
                   <p className="text-sm">
-                    Experiences
+                  <Text tid="experiences" />
                     <span className="inline-flex items-center justify-center px-2 py-1 ml-1 text-xs font-bold leading-none text-gray-300 bg-gray-700 rounded-full">
                       {experiences?.length}
                     </span>
@@ -129,7 +158,7 @@ const HomePage = ({ user, repo, projects, experiences }) => {
                   className="flex items-center px-1 text-gray-300 text-sm"
                 >
                   <AiOutlineProject className="mr-2 text-gray-600 hidden md:block" />
-                  <p className="text-sm">Projects</p>
+                  <p className="text-sm"><Text tid="projects" /></p>
                 </button>
                 <div
                   className={
@@ -162,7 +191,7 @@ const HomePage = ({ user, repo, projects, experiences }) => {
                   className="flex justify-center items-center px-1 text-gray-300 text-sm"
                 >
                   <AiOutlineMail className="mr-2 text-gray-600 hidden md:block" />
-                  <p className="text-sm">Contact Me</p>
+                  <p className="text-sm"><Text tid="contactMe" /></p>
                 </button>
                 <div
                   className={
@@ -174,16 +203,18 @@ const HomePage = ({ user, repo, projects, experiences }) => {
               </div>
             </nav>
             </div>
-            {tab === "profile" && <Profile user={user} />}
-            {tab === "about-me" && <AboutMe user={user} />}
+            {tab === "profile" && <Profile Text={Text} user={user} />}
+            {tab === "about-me" && <AboutMe Text={Text} user={user} />}
             {/* {tab === "repositories" && <Repositoty repo={repo} />} */}
-            {tab === "experiences" && <Experience experiences={experiences} />}
-            {tab === "projects" && <Project projects={projects} />}
-            {tab === "contact-me" && <ContactMe />}
+            {tab === "experiences" && <Experience Text={Text} experiences={experiences} />}
+            {tab === "projects" && <Project Text={Text} projects={projects} />}
+            {tab === "contact-me" && <ContactMe Text={Text} />}
           </div>
         </div>
         <div className="border-b border-gray-700"></div>
         <Footer />
+        </LanguageProvider>      
+
       </div>
     </>
   );
@@ -209,4 +240,7 @@ export async function getStaticProps() {
     props: { user, repo, projects, experiences },
   };
 }
+
+
+
 export default HomePage;

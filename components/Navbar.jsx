@@ -2,7 +2,7 @@ import Image from "next/image";
 import { AiFillGithub, AiOutlinePlus, AiFillCaretDown } from "react-icons/ai";
 import { BsBell } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({ Text }) => {
   return (
     <nav className="bg-[#161b22] py-3 px-6 text-gray-100 flex justify-between items-center">
       <div className="flex items-center">
@@ -13,10 +13,10 @@ const Navbar = () => {
           className="bg-[#0d1117] border focus:w-80 transition-all rounded px-2 text-xs text-gray-100 w-64 h-6 border-gray-500 hidden md:block"
         />
         <div className="ml-4 hidden md:flex items-center text-sm font-semibold text-gray-100 space-x-4">
-          <p>Pulls</p>
-          <p>Issues</p>
-          <p>Marketplace</p>
-          <p>Explore</p>
+          <p><Text tid="pulls" /></p>
+          <p><Text tid="issues" /></p>
+          <p><Text tid="marketplace" /></p>
+          <p><Text tid="explore" /></p>
         </div>
       </div>
 

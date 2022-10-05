@@ -1,4 +1,4 @@
-const Profile = ({ user }) => {
+const Profile = ({ user, Text }) => {
   return (
     <div>
       <section className="border p-3 rounded border-gray-700 my-6">
@@ -6,8 +6,8 @@ const Profile = ({ user }) => {
           ssan93 / README.<span className="text-gray-500">md</span>
         </p>
         <img className="mb-2" src="https://i.imgur.com/DmIYUON.png" alt="Steven-banner"/>
-        <p align='center'><b>5th-year Computer Science Student at UTBM at Belfort</b></p> 
-        <p align='center'>Looking for a 3-month internship from February to May 2023</p> 
+        <p align='center'><b><Text tid="studentPresentation" /></b></p> 
+        <p align='center'><Text tid="internshipDemand" /></p> 
       </section>
     </div>
   );

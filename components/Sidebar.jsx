@@ -9,7 +9,7 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 
-const Sidebar = ({ user }) => {
+const Sidebar = ({ user, Text }) => {
   return (
     <aside className="flex flex-col p-2">
       <div className="md:block mx-auto md:mx-0 flex-column justify-between items-center px-2">
@@ -43,11 +43,11 @@ const Sidebar = ({ user }) => {
       <div className="flex items-center mx-auto">
         <FiUsers className="text-gray-400 h-3 w-3 mr-1" />
         <p className="text-gray-500 text-sm">
-          <span className="text-gray-200">{user?.followers}</span> followers
+          <span className="text-gray-200">{user?.followers}</span> <Text tid="followers" />
         </p>
         <p className="text-gray-200 text-xs mx-1">&bull;</p>
         <p className="text-gray-500 text-sm">
-          <span className="text-gray-200">{user?.following}</span> following
+          <span className="text-gray-200">{user?.following}</span> <Text tid="following" />
         </p>
         <p className="text-gray-200 text-xs mx-1">&bull;</p>
         <FiStar className="text-gray-400 h-3 w-3 mr-1" />
@@ -56,13 +56,13 @@ const Sidebar = ({ user }) => {
         </p>
       </div>
       <h2 className="text-gray-400 font-semibold text-lg mx-auto md:hidden">
-          Reach Out Via
+          <Text tid="reachOut" />
       </h2>
       <div className="border-b border-gray-600 mt-2 md:mt-3"></div>
 
       <div className="md:mt-4 flex flex-wrap justify-center md:block flex-row ">
         <h2 className="text-gray-400 font-semibold text-lg mb-3 hidden md:block">
-          Reach Out Via
+          <Text tid="reachOut" />
         </h2>
         <div className="flex items-center my-2 mx-1 md:mx-0">
           <SiGmail className="text-gray-500 text-xl " />

@@ -1,5 +1,5 @@
 
-const AboutMe = ({ user }) => {
+const AboutMe = ({ user, Text }) => {
   return (
     <div>
       <section className="border p-3 rounded border-gray-700 my-6">
@@ -13,15 +13,14 @@ const AboutMe = ({ user }) => {
         </h1>
         <div className="border-b mt-2 border-gray-900"></div>
         <p className="text-gray-300  text-sm mt-3">
-          I am an Engineering Student specializing in Computer Science and also a full-stack web developer with three years of hands-on experience in Javascript.
+          <Text tid="presentation" />
         </p>
         <p className="text-gray-300  text-sm mt-3">
-          Fast learner, hard worker and passionate about web engineering, I am highly motivated and proficient in developing databases,
-          creating user interfaces and in programming languages like React or Angular.
+          <Text tid="motivation" />
         </p>
         <div className="border-b mt-2 border-gray-900"></div>
-        <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center lg:text-left">Languages</h1>
-        <h2 className="text-gray-400 text-sm text-center md:hidden">(Click to see more)</h2>
+        <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center lg:text-left"><Text tid="languages" /></h1>
+        <h2 className="text-gray-400 text-sm text-center md:hidden">(<Text tid="seeMore" />)</h2>
         <div className="w-full flex flex-wrap flex-row justify-center my-5">
           <ul className="ch-grid text-center lg:text-left">
             <li>
@@ -35,8 +34,8 @@ const AboutMe = ({ user }) => {
                 <div className="bg-[#0d1117] w-5/6 h-5/6 rounded-full absolute mt-[8%] ml-[8%]"> </div>
                 <img src="https://i.imgur.com/nQyqtUh.png" alt="france icon" className="w-6/12 absolute top-1/4 left-1/4"/>
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md ">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">Native Language</h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">French</p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="nativeLanguage" /></h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="french" /></p>
                 </div>
               </div>
             </li>
@@ -52,8 +51,8 @@ const AboutMe = ({ user }) => {
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/KG20MJ3.png" alt="england icon" className="w-6/12 absolute top-1/4 left-1/4"/>
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">C1 Certified</h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">English</p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="c1Certified" /></h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="english" /></p>
                 </div>
               </div>
             </li>
@@ -68,8 +67,8 @@ const AboutMe = ({ user }) => {
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/sTSaobq.png" alt="china icon" className="w-6/12 absolute top-1/4 left-1/4"/>
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">Mother Tongue</h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">Chinese</p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="motherTongue" /></h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="chinese" /></p>
                 </div>
               </div>
             </li>
@@ -84,8 +83,8 @@ const AboutMe = ({ user }) => {
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/wiROvS0.png" alt="spain icon" className="w-6/12 absolute top-1/4 left-1/4"/>
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">B1 scholar level</h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] text-[12px] border-t-2 p-1.5 mx-5">Spanish</p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="b1Level" /></h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="spanish" /></p>
                 </div>
               </div>
             </li>
@@ -100,8 +99,8 @@ const AboutMe = ({ user }) => {
                 <div className="inside-circle"></div>
                 <img src="https://i.imgur.com/kyaEkV1.png" alt="japan icon" className="w-6/12 absolute top-1/4 left-1/4"/>
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-4 mx-6 text-[12px] tracking-[.125em]">Actively studying since sep '22</h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">Japanese</p>
+                  <h3 className="uppercase pt-4 mx-6 text-[12px] tracking-[.125em]"><Text tid="studying" /></h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="japanese" /></p>
                 </div>
               </div>
             </li>

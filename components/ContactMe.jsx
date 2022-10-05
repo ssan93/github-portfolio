@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { renderToString } from 'react-dom/server';
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-const ContactMe = () => {
+const ContactMe = ({ Text }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -24,18 +25,19 @@ const ContactMe = () => {
       toast("Please re-check your inputs.", { type: "error" });
     }
   };
+  
 
   return (
     <div className="mt-4 p-6 bg-[#161b22] rounded">
       <ToastContainer />
       <form onSubmit={onSubmit} className="px-3 py-5">
         <h2 className="text-gray-500 text-3xl  my-2 font-semibold">
-          Contact Me
+          <Text tid="contactMe" />
         </h2>
         <div className="grid grid-flow-col grid-cols-2 gap-4">
           <input
             type="text"
-            placeholder="Name"
+            placeholder={renderToString(<Text tid="name" />)}
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -43,7 +45,7 @@ const ContactMe = () => {
           />
           <input
             type="email"
-            placeholder="Email"
+            placeholder={renderToString(<Text tid="email" />)}
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -54,14 +56,14 @@ const ContactMe = () => {
         <input
           type="text"
           name="subject"
-          placeholder="Subject"
+          placeholder={renderToString(<Text tid="subject" />)}
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           className="bg-[#0d1117] border focus:outline-none  w-full mt-3 rounded text-sm py-2 px-2 border-gray-500"
         />
 
         <textarea
-          placeholder="Message"
+          placeholder={renderToString(<Text tid="message" />)}
           name="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -71,7 +73,7 @@ const ContactMe = () => {
           type="submit"
           className="bg-[#238636] w-full py-2 font-semibold text-sm text-center focus:outline-none mt-2 rounded"
         >
-          Submit
+          {<Text tid="submit" />}
         </button>
       </form>
     </div>
