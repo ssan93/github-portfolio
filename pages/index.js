@@ -16,8 +16,8 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import LanguageProvider from "../components/Language/LanguageProvider";
 import LanguageSelector from "../components/Language/LanguageSelector";
-import en from '../ressources/traductions/english.json';
-import fr from '../ressources/traductions/french.json';
+import en from '../ressources/translations/english.json';
+import fr from '../ressources/translations/french.json';
 
 const HomePage = ({ user, repo, projects, experiences }) => {
   const [tab, setTab] = useState("profile");
