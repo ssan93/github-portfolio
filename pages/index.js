@@ -5,7 +5,6 @@ import Profile from "../components/Profile";
 import Project from "../components/Project";
 import Experience from "../components/Experience";
 import AboutMe from "../components/AboutMe";
-import Repositoty from "../components/Repositoty";
 import ContactMe from "../components/ContactMe";
 import { BsBook, BsPersonCheck } from "react-icons/bs";
 import { RiBookMarkFill } from "react-icons/ri";
@@ -146,23 +145,6 @@ const HomePage = ({ user, repo, projects, experiences }) => {
                     }
                   ></div>
                 </div>
-                {/* <div>
-                  <button
-                    onClick={() => setTab("articles")}
-                    className="flex items-center text-gray-300 px-1 text-sm"
-                  >
-                    <SiWriteDotAs className="mr-2 text-gray-600 hidden md:block" />
-                    <p className="text-sm">Articles</p>
-                  </button>
-                  <div
-                    className={
-                      tab === "articles"
-                        ? "border-b-2 w-100 border-[#f78166] mt-2"
-                        : "border-b-2 w-100 border-transparent mt-2"
-                    }
-                  ></div>
-                </div> */}
-
                 <div className="mx-2 md:mx-0 my-1 md:my-0">
                   <button
                     onClick={() => setTab("contact-me")}
@@ -183,7 +165,6 @@ const HomePage = ({ user, repo, projects, experiences }) => {
               </div>
               {tab === "profile" && <Profile Text={Text} user={user} />}
               {tab === "about-me" && <AboutMe Text={Text} user={user} />}
-              {/* {tab === "repositories" && <Repositoty repo={repo} />} */}
               {tab === "experiences" && <Experience Text={Text} experiences={experiences} />}
               {tab === "projects" && <Project Text={Text} projects={projects} />}
               {tab === "contact-me" && <ContactMe Text={Text} />}
