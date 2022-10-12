@@ -22,7 +22,7 @@ const Sidebar = ({ user, Text }) => {
           />
         </div>
 
-        <div className="block md:hidden">
+        <div className="block md:hidden text-center">
           <Image
             src="/avatar.jpg"
             height="100"
