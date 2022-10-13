@@ -2,42 +2,54 @@
     {
       "id": 1,
       "name": "Insight",
+      "nameFR": "Insight",
       "description": "Built for Sfeir clients to keep an eye on the KPI of their projects",
+      "descriptionFR": "Conçu pour les clients Sfeir afin de suivre l'évolution des KPI de leurs projets",
       "image": "https://i.imgur.com/2g7luWF.png",
       "tags": ["next", "redux", "strapi", "graphql", "material-ui"]
     },
     {
       "id": 2,
       "name": "Tambour Horizon Light Up",
+      "nameFR": "Tambour Horizon Light Up",
       "description": "Backend development of the LV Smartwatch",
+      "descriptionFR": "Développement backend de la montre connectée Louis Vuitton",
       "image": "https://i.imgur.com/UlZZ0i5.jpg",
       "tags": ["node", "express", "vue", "gcp", "heroku", "aws", "redis", "psql"]
     },
     {
       "id": 3,
       "name": "TotalEnergies Solar Mapper",
-      "description": "Google earth engine based tool to estimate the solar potential of people's residence",
+      "nameFR": "TotalEnergies Solar Mapper",
+      "description": "Google Earth Engine based tool to estimate the solar potential of people's residence",
+      "descriptionFR": "Outil basé sur Google Earth Engine servant à estimer le potentiel solaire des résidences",
       "image": "https://i.imgur.com/KeTnrfU.jpg",
       "tags": ["react", "typescript", "redux", "google-earth", "google-maps"]
     },
     {
       "id": 4,
       "name": "Le Cèdre",
+      "nameFR": "Le Cèdre",
       "description": "Built for Le Cèdre affiliates to get market recommandations",
+      "descriptionFR": "Conçu pour les affiliés Le Cèdre afin de recevoir des recommandations de marché",
       "image": "https://i.imgur.com/T39Xq44.jpg",
       "tags": ["angular", "typescript", "redux", "cypress"]
     },
     {
       "id": 5,
       "name": "Selligent Monitoring System",
+      "nameFR": "Selligent Monitoring System",
       "description": "Built for marketers who wish to get alerted on their failed campaigns",
+      "descriptionFR": "Conçu pour les marketeurs qui souhaitent être alertés sur leurs campagnes échouées",
       "image": "https://i.imgur.com/CbNRUVf.png",
       "tags": ["selligent", "html", "css"]
     },
     {
       "id": 6,
       "name": "Github Portfolio",
+      "nameFR": "Github Portfolio",
       "description": "Developed to display my resume online",
+      "descriptionFR": "Développé pour afficher mon profil en ligne",
       "image": "https://i.imgur.com/zcHpLC5.png",
       "tags": ["next", "firebase", "tailwindcss"]
     }

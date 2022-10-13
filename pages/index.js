@@ -18,7 +18,7 @@ import LanguageSelector from "../components/Language/LanguageSelector";
 import en from '../ressources/translations/english.json';
 import fr from '../ressources/translations/french.json';
 
-const HomePage = ({ user, repo, projects, experiences }) => {
+const HomePage = ({ user, projects, experiences }) => {
   const [tab, setTab] = useState("profile");
 
   const dictionaryList = { en, fr };
@@ -165,8 +165,8 @@ const HomePage = ({ user, repo, projects, experiences }) => {
               </div>
               {tab === "profile" && <Profile Text={Text} user={user} />}
               {tab === "about-me" && <AboutMe Text={Text} user={user} />}
-              {tab === "experiences" && <Experience Text={Text} experiences={experiences} />}
-              {tab === "projects" && <Project Text={Text} projects={projects} />}
+              {tab === "experiences" && <Experience LanguageContext={LanguageContext} experiences={experiences} />}
+              {tab === "projects" && <Project LanguageContext={LanguageContext} projects={projects} />}
               {tab === "contact-me" && <ContactMe Text={Text} />}
             </div>
           </div>
@@ -185,17 +185,11 @@ export async function getStaticProps() {
   );
   const user = await userRes.json();
 
-  const repoRes = await fetch(
-    `https://api.github.com/users/ssan93/repos?sort=created_at&per_page=10`, 
-    { client_id:process.env.GIT_CLIENT_ID }
-  );
-  const repo = await repoRes.json();
-
   const projects = await getProjects();
   const experiences = await getExperiences();
 
   return {
-    props: { user, repo, projects, experiences },
+    props: { user, projects, experiences },
   };
 }
 

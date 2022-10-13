@@ -2,19 +2,25 @@
     {
       "id": 1,
       "name": "Fullstack Developer",
+      "nameFR": "Développeur Fullstack",
       "description": "Developed services on several client projects",
+      "descriptionFR": "Développement de services pour plusieurs projets clients",
       "image": "https://i.imgur.com/mJhjpFH.jpg"
     },
     {
       "id": 2,
       "name": "Technical Project Manager",
+      "nameFR": "Technical Project Manager",
       "description": "Accompanied clients on their automated marketing campaigns",
+      "descriptionFR": "Accompagnement des clients dans leurs campagnes de marketing automatisé",
       "image": "https://i.imgur.com/hQYDAae.jpg"
     },
     {
       "id": 3,
       "name": "Office Manager",
+      "nameFR": "Responsable accueil",
       "description": "Administration, reception and accounting",
+      "descriptionFR": "Administration, réception et comptabilité",
       "image": "https://i.imgur.com/H5HB2R0.jpg"
     }
   ]
