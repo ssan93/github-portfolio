@@ -7,7 +7,11 @@ const ProjectCard = ({ project, LanguageContext }) => {
   return (
     <div className="border h-100 border-gray-700 rounded flex flex-col justify-between	">
       <div>
-      <Image src={project?.image} width="500" height="300" />
+        {
+          project?.url? 
+            <a href={project.url} target="_blank"><Image src={project?.image} width="500" height="300" /></a>
+            : <Image src={project?.image} width="500" height="300" />
+        } 
       <h2 className="text-gray-300 font-semibold text-xl px-2 py-2 sm:text-lg">
         {userLanguage ==="en" ? project?.name : project?.nameFR}
       </h2>
