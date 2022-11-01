@@ -6,7 +6,7 @@
       "description": "Built for Sfeir clients to keep an eye on the KPI of their projects",
       "descriptionFR": "Conçu pour les clients Sfeir afin de suivre l'évolution des KPI de leurs projets",
       "image": "https://i.imgur.com/2g7luWF.png",
-      "tags": ["next", "redux", "strapi", "graphql", "material-ui"]
+      "tags": ["next", "redux", "strapi", "graphql", "gcp", "terraform", "material-ui"]
     },
     {
       "id": 2,

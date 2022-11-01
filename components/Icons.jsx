@@ -30,6 +30,7 @@ import {
   SiTypescript,
   SiHtml5,
   SiCss3,
+  SiTerraform
 } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 
@@ -81,6 +82,8 @@ const renderSwitch = (tag) => {
       return <a href="https://nuxtjs.org/fr/" target="_blank"><SiNuxtdotjs className="text-green-700 mr-1" /></a>
     case "gcp" :
       return <a href="https://console.cloud.google.com/" target="_blank"><DiGoogleCloudPlatform className="text-red-700 mr-1" /></a>
+    case "terraform" :
+      return <a href="https://www.terraform.io/" target="_blank"><SiTerraform className="text-blue-700 mr-1" /></a>
     case "heroku" :
       return <a href="https://heroku.com/" target="_blank"><DiHeroku className="text-purple-700 mr-1" /></a>
     case "aws" :
