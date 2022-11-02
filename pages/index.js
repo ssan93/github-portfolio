@@ -150,7 +150,7 @@ const HomePage = ({ user, projects, experiences }) => {
                     }
                   ></div>
                 </div>
-                <div className="mx-2 md:mx-0 my-1 md:my-0">
+                {/* <div className="mx-2 md:mx-0 my-1 md:my-0">
                   <button
                     onClick={() => setTab("contact-me")}
                     className="flex justify-center items-center px-1 text-gray-300 text-sm"
@@ -165,14 +165,14 @@ const HomePage = ({ user, projects, experiences }) => {
                         : "border-b-2 w-100 border-transparent mt-2"
                     }
                   ></div>
-                </div>
+                </div> */}
               </nav>
               </div>
               {tab === "profile" && <Profile Text={Text} user={user} />}
               {tab === "about-me" && <AboutMe Text={Text} user={user} />}
               {tab === "experiences" && <Experience LanguageContext={LanguageContext} experiences={experiences} />}
               {tab === "projects" && <Project LanguageContext={LanguageContext} projects={projects} />}
-              {tab === "contact-me" && <ContactMe Text={Text} />}
+              {/* {tab === "contact-me" && <ContactMe Text={Text} />} */}
             </div>
           </div>
           <div className="border-b border-gray-700"></div>
