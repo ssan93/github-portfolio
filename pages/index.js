@@ -44,6 +44,11 @@ const HomePage = ({ user, projects, experiences }) => {
       <Head>
         <title>Steven San's Portfolio</title>
         <link rel="icon" href="https://github.com/ssan93.png" />
+        <meta name="description" content="Steven San is a web developer"/>
+        <meta name="keywords" content="steven san, steven, san, web developer, steven web developer, steven san web developer, steven portfolio, steven san portfolio, portfolio"/>
+        <meta property="og:title" content="Steven San's Portfolio"/>
+        <meta property="og:description" content="A computer science student passionate about web development"/>
+        <meta name="original-source" content="https://www.steven-san.com"></meta>
       </Head>
       <div className="bg-[#0d1117] min-h-screen">
         <Navbar Text={Text}/>
