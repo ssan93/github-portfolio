@@ -63,6 +63,7 @@ const HomePage = ({ user, projects, experiences }) => {
         <meta property="og:locale:alternate" content="en_GB" />
         <meta property="og:locale:alternate" content="en_US" />
 
+        <meta name="fb:app_id" content="796693392095236" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@crunchitaip" />
         <meta name="twitter:creator" content="@crunchitaip" />
