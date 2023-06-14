@@ -1,12 +1,10 @@
 import Image from "next/image";
 import { FiUsers, FiStar } from "react-icons/fi";
-import Link from "next/link";
 import { SiGmail } from "react-icons/si";
 import {
   AiFillLinkedin,
   AiOutlineInstagram,
   AiFillGithub,
-  AiOutlineTwitter,
 } from "react-icons/ai";
 
 export const Sidebar = ({ user, Text }) => {
@@ -43,11 +41,13 @@ export const Sidebar = ({ user, Text }) => {
       <div className="flex items-center mx-auto">
         <FiUsers className="text-gray-400 h-3 w-3 mr-1" />
         <p className="text-gray-500 text-sm">
-          <span className="text-gray-200">{user?.followers}</span> <Text tid="followers" />
+          <span className="text-gray-200">{user?.followers}</span>{" "}
+          <Text tid="followers" />
         </p>
         <p className="text-gray-200 text-xs mx-1">&bull;</p>
         <p className="text-gray-500 text-sm">
-          <span className="text-gray-200">{user?.following}</span> <Text tid="following" />
+          <span className="text-gray-200">{user?.following}</span>{" "}
+          <Text tid="following" />
         </p>
         <p className="text-gray-200 text-xs mx-1">&bull;</p>
         <FiStar className="text-gray-400 h-3 w-3 mr-1" />
@@ -56,7 +56,7 @@ export const Sidebar = ({ user, Text }) => {
         </p>
       </div>
       <h2 className="text-gray-400 font-semibold text-lg mx-auto md:hidden">
-          <Text tid="reachOut" />
+        <Text tid="reachOut" />
       </h2>
       <div className="border-b border-gray-600 mt-2 md:mt-3"></div>
 
@@ -97,7 +97,7 @@ export const Sidebar = ({ user, Text }) => {
             ssan93
           </a>
         </div>
-        
+
         <div className="flex items-center my-2 mx-1 md:mx-0">
           <AiOutlineInstagram className="text-gray-500 text-xl" />
           <a
@@ -108,9 +108,7 @@ export const Sidebar = ({ user, Text }) => {
             steven.san7
           </a>
         </div>
-
       </div>
     </aside>
   );
 };
-
