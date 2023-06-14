@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {    
-    loader: 'akamai',
-    path: '',
+  images: {
     domains: ["github.com", "i.imgur.com", "res.cloudinary.com"],
-  }
-}
+  },
+  reactStrictMode: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
