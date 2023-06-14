@@ -53,8 +53,33 @@ const HomePage = ({ user, projects, experiences }) => {
         <meta property="og:title" content="Steven San's Portfolio" />
         <meta
           property="og:description"
-          content="A computer science student passionate about web development"
+          content="Showcasing my GitHub-inspired portfolio. Explore my coding prowess and project highlights. Unleash your curiosity as you delve into my code repositories. Let's connect and collaborate on innovative ventures. Join me in the world of endless possibilities."
         />
+        <meta property="og:image" content="https://i.imgur.com/DmIYUON.png" />
+        <meta property="og:url" content="https://www.steven-san.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Steven San's Portfolio" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:locale:alternate" content="en_GB" />
+        <meta property="og:locale:alternate" content="en_US" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@crunchitaip" />
+        <meta name="twitter:creator" content="@crunchitaip" />
+        <meta name="twitter:title" content="Steven San's Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Showcasing my GitHub-inspired portfolio. Explore my coding prowess and project highlights. Unleash your curiosity as you delve into my code repositories. Let's connect and collaborate on innovative ventures. Join me in the world of endless possibilities."
+        />
+        <meta name="twitter:image" content="https://i.imgur.com/DmIYUON.png" />
+        <meta name="twitter:image:alt" content="Steven San's Portfolio" />
+        <meta name="twitter:domain" content="https://www.steven-san.com" />
+        <meta name="twitter:url" content="https://www.steven-san.com" />
+        <meta name="twitter:label1" content="Written by" />
+        <meta name="twitter:data1" content="Steven San" />
+        <meta name="twitter:label2" content="Est. reading time" />
+        <meta name="twitter:data2" content="5 minutes" />
+
         <meta
           name="original-source"
           content="https://www.steven-san.com"
