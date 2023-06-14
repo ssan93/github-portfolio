@@ -1,11 +1,7 @@
 import Image from "next/image";
 import { FiUsers, FiStar } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
-import {
-  AiFillLinkedin,
-  AiOutlineInstagram,
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 export const Sidebar = ({ user, Text }) => {
   return (
@@ -95,17 +91,6 @@ export const Sidebar = ({ user, Text }) => {
             className="text-gray-500 ml-1 md:ml-2 text-sm"
           >
             ssan93
-          </a>
-        </div>
-
-        <div className="flex items-center my-2 mx-1 md:mx-0">
-          <AiOutlineInstagram className="text-gray-500 text-xl" />
-          <a
-            href="https://www.instagram.com/steven.san7/"
-            target="_blank"
-            className="text-gray-500 ml-1 md:ml-2 text-sm"
-          >
-            steven.san7
           </a>
         </div>
       </div>
