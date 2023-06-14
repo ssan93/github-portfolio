@@ -9,7 +9,7 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 
-const Sidebar = ({ user, Text }) => {
+export const Sidebar = ({ user, Text }) => {
   return (
     <aside className="flex flex-col p-2">
       <div className="md:block mx-auto md:mx-0 flex-column justify-between items-center px-2">
@@ -114,4 +114,3 @@ const Sidebar = ({ user, Text }) => {
   );
 };
 
-export default Sidebar;

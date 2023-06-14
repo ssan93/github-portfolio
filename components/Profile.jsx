@@ -1,4 +1,4 @@
-const Profile = ({ user, Text }) => {
+export const Profile = ({ user, Text }) => {
   return (
     <div>
       <section className="border p-3 rounded border-gray-700 my-6">
@@ -13,4 +13,3 @@ const Profile = ({ user, Text }) => {
   );
 };
 
-export default Profile;

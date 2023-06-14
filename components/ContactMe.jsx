@@ -4,7 +4,7 @@ import { renderToString } from 'react-dom/server';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-const ContactMe = ({ Text }) => {
+export const ContactMe = ({ Text }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -79,5 +79,3 @@ const ContactMe = ({ Text }) => {
     </div>
   );
 };
-
-export default ContactMe;

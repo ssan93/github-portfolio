@@ -2,7 +2,7 @@ import Image from "next/image";
 import { AiFillGithub, AiOutlinePlus, AiFillCaretDown } from "react-icons/ai";
 import { BsBell } from "react-icons/bs";
 
-const Navbar = ({ Text }) => {
+export const Navbar = ({ Text }) => {
   return (
     <nav className="bg-[#161b22] py-3 px-6 text-gray-100 flex justify-between items-center">
       <div className="flex items-center">
@@ -39,5 +39,3 @@ const Navbar = ({ Text }) => {
     </nav>
   );
 };
-
-export default Navbar;

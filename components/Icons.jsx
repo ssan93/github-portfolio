@@ -34,7 +34,7 @@ import {
 } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 
-const Icons = ({ tag }) => {
+export const Icons = ({ tag }) => {
   return renderSwitch(tag);
 };
 
@@ -108,4 +108,3 @@ const renderSwitch = (tag) => {
       return <></>
   }
 }
-export default Icons;

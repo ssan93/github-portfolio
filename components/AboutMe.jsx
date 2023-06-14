@@ -1,5 +1,5 @@
 
-const AboutMe = ({ user, Text }) => {
+export const AboutMe = ({ user, Text }) => {
   return (
     <div>
       <section className="border p-3 rounded border-gray-700 my-6">
@@ -164,5 +164,3 @@ const AboutMe = ({ user, Text }) => {
     </div>
   );
 };
-
-export default AboutMe;

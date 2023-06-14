@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 // it provides the language context to app
-const LanguageProvider = ({ children, LanguageContext, dictionaryList, languageOptions }) => {
+export const LanguageProvider = ({ children, LanguageContext, dictionaryList, languageOptions }) => {
    
 
   // const defaultLanguage = 'window.localStorage.getItem('rcml-lang')';
@@ -25,5 +25,3 @@ const LanguageProvider = ({ children, LanguageContext, dictionaryList, languageO
     </LanguageContext.Provider>
   );
 };
-
-export default LanguageProvider;

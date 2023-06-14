@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
 
-const Experience = ({ experiences, LanguageContext }) => {
+export const Experience = ({ experiences, LanguageContext }) => {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8">
       {experiences?.map((experience) => (
@@ -9,5 +9,3 @@ const Experience = ({ experiences, LanguageContext }) => {
     </div>
   );
 };
-
-export default Experience;

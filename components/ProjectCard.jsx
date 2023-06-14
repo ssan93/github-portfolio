@@ -2,7 +2,7 @@ import Image from "next/image";
 import Icons from "./Icons";
 import { useContext } from "react";
 
-const ProjectCard = ({ project, LanguageContext }) => {
+export const ProjectCard = ({ project, LanguageContext }) => {
   const { userLanguage } = useContext(LanguageContext);
   return (
     <div className="border h-100 border-gray-700 rounded flex flex-col justify-between	">
@@ -26,4 +26,3 @@ const ProjectCard = ({ project, LanguageContext }) => {
   );
 };
 
-export default ProjectCard;
