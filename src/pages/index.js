@@ -45,7 +45,7 @@ const HomePage = ({ user, projects, experiences }) => {
       <Head>
         <title>Steven San's Portfolio</title>
         <link rel="icon" href="https://github.com/ssan93.png" />
-        <meta name="description" content="Steven San is a web developer" />
+        <meta name="description" content="Showcasing my GitHub-inspired portfolio. Explore my coding prowess and project highlights. Unleash your curiosity as you delve into my code repositories. Let's connect and collaborate on innovative ventures. Join me in the world of endless possibilities." />
         <meta
           name="keywords"
           content="steven san, steven, san, web developer, steven web developer, steven san web developer, steven portfolio, steven san portfolio, portfolio"
