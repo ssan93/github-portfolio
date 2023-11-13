@@ -1,62 +1,98 @@
 [
-    {
-      "id": 1,
-      "name": "Insight",
-      "nameFR": "Insight",
-      "description": "Built for Sfeir clients to keep an eye on the KPI of their projects",
-      "descriptionFR": "Conçu pour les clients Sfeir afin de suivre l'évolution des KPI de leurs projets",
-      "image": "https://i.imgur.com/2g7luWF.png",
-      "alt": "Insight dashboard",
-      "tags": ["next", "redux", "strapi", "graphql", "gcp", "terraform", "material-ui"]
-    },
-    {
-      "id": 2,
-      "name": "Tambour Horizon Light Up",
-      "nameFR": "Tambour Horizon Light Up",
-      "description": "Backend development of the LV Smartwatch",
-      "descriptionFR": "Développement backend de la montre connectée Louis Vuitton",
-      "image": "https://i.imgur.com/UlZZ0i5.jpg",
-      "alt": "Tambour Horizon Light Up",
-      "tags": ["node", "express", "vue", "gcp", "heroku", "aws", "redis", "psql"]
-    },
-    {
-      "id": 3,
-      "name": "TotalEnergies Solar Mapper",
-      "nameFR": "TotalEnergies Solar Mapper",
-      "description": "Google Earth Engine based tool to estimate the solar potential of people's residence",
-      "descriptionFR": "Outil basé sur Google Earth Engine servant à estimer le potentiel solaire des résidences",
-      "image": "https://i.imgur.com/KeTnrfU.jpg",
-      "alt": "TotalEnergies Solar Mapper map",
-      "tags": ["react", "typescript", "redux", "google-earth", "google-maps"]
-    },
-    {
-      "id": 4,
-      "name": "Le Cèdre",
-      "nameFR": "Le Cèdre",
-      "description": "Built for Le Cèdre affiliates to get market recommandations",
-      "descriptionFR": "Conçu pour les affiliés Le Cèdre afin de recevoir des recommandations de marché",
-      "image": "https://i.imgur.com/T39Xq44.jpg",
-      "alt": "Le Cèdre logo",
-      "tags": ["angular", "typescript", "redux", "cypress"]
-    },
-    {
-      "id": 5,
-      "name": "Selligent Monitoring System",
-      "nameFR": "Selligent Monitoring System",
-      "description": "Built for marketers who wish to get alerted on their failed campaigns",
-      "descriptionFR": "Conçu pour les marketeurs qui souhaitent être alertés sur leurs campagnes échouées",
-      "image": "https://i.imgur.com/CbNRUVf.png",
-      "alt": "Example of a Selligent Monitoring System's alert",
-      "tags": ["selligent", "html", "css"]
-    },
-    {
-      "id": 6,
-      "name": "Github Portfolio",
-      "nameFR": "Github Portfolio",
-      "description": "Developed to display my resume online",
-      "descriptionFR": "Développé pour afficher mon profil en ligne",
-      "image": "https://i.imgur.com/zcHpLC5.png",
-      "alt": "Portfolio's screenshot",
-      "tags": ["next", "firebase", "tailwindcss"]
-    }
-  ]
+  {
+    "id": 7,
+    "name": "WedStream",
+    "nameFR": "WedStream",
+    "description": "Web application to provide images for a live slideshow during weddings and other events",
+    "descriptionFR": "Application web permettant de fournir des images pour un diaporama en direct lors de mariages et autres événements",
+    "image": "https://i.imgur.com/rqShhY6.png",
+    "alt": "Wedstream dashboard",
+    "tags": ["react", "gatsby", "typescript", "firebase", "gcp", "material-ui"]
+  },
+  {
+    "id": 7,
+    "name": "Bizkiz",
+    "nameFR": "Bizkiz",
+    "description": "Tool to centralize business cases and be able to share them easily with clients",
+    "descriptionFR": "Outil permettant de centraliser les business cases et de pouvoir les partager facilement avec les clients",
+    "image": "https://i.imgur.com/ZJ4Tkuu.png",
+    "alt": "Bizkiz dashboard",
+    "tags": [
+      "next",
+      "typescript",
+      "strapi",
+      "gcp",
+      "terraform",
+      "docker",
+      "material-ui"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Insight",
+    "nameFR": "Insight",
+    "description": "Built for Sfeir clients to keep an eye on the KPI of their projects",
+    "descriptionFR": "Conçu pour les clients Sfeir afin de suivre l'évolution des KPI de leurs projets",
+    "image": "https://i.imgur.com/2g7luWF.png",
+    "alt": "Insight dashboard",
+    "tags": [
+      "next",
+      "redux",
+      "strapi",
+      "graphql",
+      "gcp",
+      "terraform",
+      "material-ui"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Tambour Horizon Light Up",
+    "nameFR": "Tambour Horizon Light Up",
+    "description": "Backend development of the LV Smartwatch",
+    "descriptionFR": "Développement backend de la montre connectée Louis Vuitton",
+    "image": "https://i.imgur.com/UlZZ0i5.jpg",
+    "alt": "Tambour Horizon Light Up",
+    "tags": ["node", "express", "vue", "gcp", "heroku", "aws", "redis", "psql"]
+  },
+  {
+    "id": 3,
+    "name": "TotalEnergies Solar Mapper",
+    "nameFR": "TotalEnergies Solar Mapper",
+    "description": "Google Earth Engine based tool to estimate the solar potential of people's residence",
+    "descriptionFR": "Outil basé sur Google Earth Engine servant à estimer le potentiel solaire des résidences",
+    "image": "https://i.imgur.com/KeTnrfU.jpg",
+    "alt": "TotalEnergies Solar Mapper map",
+    "tags": ["react", "typescript", "redux", "google-earth", "google-maps"]
+  },
+  {
+    "id": 4,
+    "name": "Le Cèdre",
+    "nameFR": "Le Cèdre",
+    "description": "Built for Le Cèdre affiliates to get market recommandations",
+    "descriptionFR": "Conçu pour les affiliés Le Cèdre afin de recevoir des recommandations de marché",
+    "image": "https://i.imgur.com/T39Xq44.jpg",
+    "alt": "Le Cèdre logo",
+    "tags": ["angular", "typescript", "redux", "cypress"]
+  },
+  {
+    "id": 5,
+    "name": "Selligent Monitoring System",
+    "nameFR": "Selligent Monitoring System",
+    "description": "Built for marketers who wish to get alerted on their failed campaigns",
+    "descriptionFR": "Conçu pour les marketeurs qui souhaitent être alertés sur leurs campagnes échouées",
+    "image": "https://i.imgur.com/CbNRUVf.png",
+    "alt": "Example of a Selligent Monitoring System's alert",
+    "tags": ["selligent", "html", "css"]
+  },
+  {
+    "id": 6,
+    "name": "Github Portfolio",
+    "nameFR": "Github Portfolio",
+    "description": "Developed to display my resume online",
+    "descriptionFR": "Développé pour afficher mon profil en ligne",
+    "image": "https://i.imgur.com/zcHpLC5.png",
+    "alt": "Portfolio's screenshot",
+    "tags": ["next", "firebase", "tailwindcss"]
+  }
+]

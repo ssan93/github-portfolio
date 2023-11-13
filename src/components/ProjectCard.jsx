@@ -21,7 +21,8 @@ export const ProjectCard = ({ project, LanguageContext }) => {
             src={project?.image}
             alt={project?.alt}
             width="500"
-            height="300"
+            height="100"
+            className="h-100"
           />
         )}
         <h2 className="text-gray-300 font-semibold text-xl px-2 py-2 sm:text-lg">

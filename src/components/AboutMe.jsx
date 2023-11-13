@@ -1,14 +1,14 @@
-
 export const AboutMe = ({ user, Text }) => {
   return (
     <div>
       <section className="border p-3 rounded border-gray-700 my-6">
-        <h1 className="text-gray-300 font-semibold text-2xl mt-3 ">Hey! 
-          <img 
-              className="inline align-bottom mx-1"
-              src="./Hi.gif"
-              height="40"
-              width="40"
+        <h1 className="text-gray-300 font-semibold text-2xl mt-3 ">
+          Hey!
+          <img
+            className="inline align-bottom mx-1"
+            src="./Hi.gif"
+            height="40"
+            width="40"
           />
         </h1>
         <div className="border-b mt-2 border-gray-900"></div>
@@ -19,29 +19,43 @@ export const AboutMe = ({ user, Text }) => {
           <Text tid="motivation" />
         </p>
         <div className="border-b mt-2 border-gray-900"></div>
-        <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center lg:text-left"><Text tid="languages" /></h1>
-        <h2 className="text-gray-400 text-sm text-center md:hidden">(<Text tid="seeMore" />)</h2>
+        <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center lg:text-left">
+          <Text tid="languages" />
+        </h1>
+        <h2 className="text-gray-400 text-sm text-center md:hidden">
+          (<Text tid="seeMore" />)
+        </h2>
         <div className="w-full flex flex-wrap flex-row justify-center my-5">
           <ul className="ch-grid text-center lg:text-left">
             <li>
-              <div className="circle"> 
+              <div className="circle">
                 <div className="mask half">
                   <div className="fill transform100"></div>
                 </div>
                 <div className="mask full transform100">
                   <div className="fill transform100"></div>
                 </div>
-                <div className="bg-[#0d1117] w-5/6 h-5/6 rounded-full absolute mt-[8%] ml-[8%]"> </div>
-                <img src="https://i.imgur.com/nQyqtUh.png" alt="france icon" className="w-6/12 absolute top-1/4 left-1/4"/>
+                <div className="bg-[#0d1117] w-5/6 h-5/6 rounded-full absolute mt-[8%] ml-[8%]">
+                  {" "}
+                </div>
+                <img
+                  src="https://i.imgur.com/nQyqtUh.png"
+                  alt="france icon"
+                  className="w-6/12 absolute top-1/4 left-1/4"
+                />
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md ">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="nativeLanguage" /></h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="french" /></p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">
+                    <Text tid="nativeLanguage" />
+                  </h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">
+                    <Text tid="french" />
+                  </p>
                 </div>
               </div>
             </li>
-            
+
             <li>
-              <div className="circle"> 
+              <div className="circle">
                 <div className="mask half">
                   <div className="fill transform80"></div>
                 </div>
@@ -49,31 +63,23 @@ export const AboutMe = ({ user, Text }) => {
                   <div className="fill transform80"></div>
                 </div>
                 <div className="inside-circle"></div>
-                <img src="https://i.imgur.com/KG20MJ3.png" alt="england icon" className="w-6/12 absolute top-1/4 left-1/4"/>
+                <img
+                  src="https://i.imgur.com/KG20MJ3.png"
+                  alt="england icon"
+                  className="w-6/12 absolute top-1/4 left-1/4"
+                />
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="c1Certified" /></h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="english" /></p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">
+                    <Text tid="c1Certified" />
+                  </h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">
+                    <Text tid="english" />
+                  </p>
                 </div>
               </div>
             </li>
             <li>
-              <div className="circle"> 
-                <div className="mask half">
-                  <div className="fill transform50"></div>
-                </div>
-                <div className="mask full transform50">
-                  <div className="fill transform50"></div>
-                </div>
-                <div className="inside-circle"></div>
-                <img src="https://i.imgur.com/sTSaobq.png" alt="china icon" className="w-6/12 absolute top-1/4 left-1/4"/>
-                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="motherTongue" /></h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="chinese" /></p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="circle"> 
+              <div className="circle">
                 <div className="mask half">
                   <div className="fill transform40"></div>
                 </div>
@@ -81,15 +87,47 @@ export const AboutMe = ({ user, Text }) => {
                   <div className="fill transform40"></div>
                 </div>
                 <div className="inside-circle"></div>
-                <img src="https://i.imgur.com/wiROvS0.png" alt="spain icon" className="w-6/12 absolute top-1/4 left-1/4"/>
+                <img
+                  src="https://i.imgur.com/sTSaobq.png"
+                  alt="china icon"
+                  className="w-6/12 absolute top-1/4 left-1/4"
+                />
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]"><Text tid="b1Level" /></h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="spanish" /></p>
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">
+                    <Text tid="motherTongue" />
+                  </h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">
+                    <Text tid="chinese" />
+                  </p>
                 </div>
               </div>
             </li>
+            {/* <li>
+              <div className="circle">
+                <div className="mask half">
+                  <div className="fill transform40"></div>
+                </div>
+                <div className="mask full transform40">
+                  <div className="fill transform40"></div>
+                </div>
+                <div className="inside-circle"></div>
+                <img
+                  src="https://i.imgur.com/wiROvS0.png"
+                  alt="spain icon"
+                  className="w-6/12 absolute top-1/4 left-1/4"
+                />
+                <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
+                  <h3 className="uppercase pt-6 mx-6 text-[12px] tracking-[.125em]">
+                    <Text tid="b1Level" />
+                  </h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] text-[12px] border-t-2 p-1.5 mx-5">
+                    <Text tid="spanish" />
+                  </p>
+                </div>
+              </div>
+            </li> */}
             <li>
-              <div className="circle"> 
+              <div className="circle">
                 <div className="mask half">
                   <div className="fill transform20"></div>
                 </div>
@@ -97,17 +135,25 @@ export const AboutMe = ({ user, Text }) => {
                   <div className="fill transform20"></div>
                 </div>
                 <div className="inside-circle"></div>
-                <img src="https://i.imgur.com/kyaEkV1.png" alt="japan icon" className="w-6/12 absolute top-1/4 left-1/4"/>
+                <img
+                  src="https://i.imgur.com/lpmQjtl.png"
+                  alt="korean icon"
+                  className="w-6/12 absolute top-1/4 left-1/4"
+                />
                 <div className="ch-info text-center scale-0 ease-in-out duration-500 transition-all bg-white/[.017] h-full backdrop-blur-md">
-                  <h3 className="uppercase pt-4 mx-6 text-[12px] tracking-[.125em]"><Text tid="studying" /></h3>
-                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5"><Text tid="japanese" /></p>
+                  <h3 className="uppercase pt-4 mx-6 text-[12px] tracking-[.125em]">
+                    <Text tid="studying" />
+                  </h3>
+                  <p className="duration-1000 delay-500 opacity-0 border-[#f78166] text-[12px] border-t-2 p-1.5 mx-5">
+                    <Text tid="korean" />
+                  </p>
                 </div>
               </div>
             </li>
           </ul>
         </div>
         {/* <img src="https://raw.githubusercontent.com/Sacsam005/my_portfolio_website/0fc1dccb57e4a40e1751d695fbd5b8048fae6471/img/skills.svg" alt="Skills" data-aos="zoom-out" className="test my-5"/> */}
-        
+
         {/* <h1 className="text-gray-300 font-semibold text-2xl mt-3 text-center md:text-left">Tools</h1>
 
         <br/>

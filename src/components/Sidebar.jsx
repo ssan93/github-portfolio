@@ -74,11 +74,11 @@ export const Sidebar = ({ user, Text }) => {
           <AiFillLinkedin className="text-gray-500 text-xl" />
 
           <a
-            href="https://www.linkedin.com/in/steven-san-53a8a1194/"
+            href="https://www.linkedin.com/in/steven-san7/"
             target="_blank"
             className="text-gray-500 ml-1 md:ml-2 text-sm"
           >
-            steven-san
+            steven-san7
           </a>
         </div>
 
