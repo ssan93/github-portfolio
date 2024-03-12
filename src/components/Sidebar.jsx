@@ -10,6 +10,7 @@ export const Sidebar = ({ user, Text }) => {
         <div className="hidden md:block mx-auto md:mx-0">
           <Image
             src="/avatar.jpg"
+            alt="avatar"
             height="250"
             width="250"
             className="rounded-full"
@@ -19,6 +20,7 @@ export const Sidebar = ({ user, Text }) => {
         <div className="block md:hidden text-center">
           <Image
             src="/avatar.jpg"
+            alt="avatar"
             height="100"
             width="100"
             className="rounded-full"

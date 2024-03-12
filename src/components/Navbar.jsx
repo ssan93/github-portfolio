@@ -13,10 +13,18 @@ export const Navbar = ({ Text }) => {
           className="bg-[#0d1117] border focus:w-80 transition-all rounded px-2 text-xs text-gray-100 w-64 h-6 border-gray-500 hidden md:block"
         />
         <div className="ml-4 hidden md:flex items-center text-sm font-semibold text-gray-100 space-x-4">
-          <p><Text tid="pulls" /></p>
-          <p><Text tid="issues" /></p>
-          <p><Text tid="marketplace" /></p>
-          <p><Text tid="explore" /></p>
+          <p>
+            <Text tid="pulls" />
+          </p>
+          <p>
+            <Text tid="issues" />
+          </p>
+          <p>
+            <Text tid="marketplace" />
+          </p>
+          <p>
+            <Text tid="explore" />
+          </p>
         </div>
       </div>
 
@@ -29,6 +37,7 @@ export const Navbar = ({ Text }) => {
         <div className="flex items-center">
           <Image
             src="https://github.com/ssan93.png"
+            alt="profile"
             height="22"
             width="22"
             className="rounded-full"

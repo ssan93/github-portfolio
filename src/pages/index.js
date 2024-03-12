@@ -1,4 +1,5 @@
-import { useState, useContext, createContext } from "react";
+import { useState, useContext, createContext, useEffect } from "react";
+import { useRouter } from "next/router";
 import {
   Navbar,
   Sidebar,
@@ -21,8 +22,13 @@ import fr from "../ressources/translations/french.json";
 
 const HomePage = ({ user, projects, experiences }) => {
   const [tab, setTab] = useState("profile");
-
   const dictionaryList = { en, fr };
+
+  useEffect(() => {
+    if (window.location.hash) {
+      setTab(window.location.hash.replace("#", ""));
+    }
+  }, []);
 
   const LanguageContext = createContext({
     userLanguage: "en",
@@ -45,7 +51,10 @@ const HomePage = ({ user, projects, experiences }) => {
       <Head>
         <title>Steven San's Portfolio</title>
         <link rel="icon" href="https://github.com/ssan93.png" />
-        <meta name="description" content="Showcasing my GitHub-inspired portfolio. Explore my coding prowess and project highlights. Unleash your curiosity as you delve into my code repositories. Let's connect and collaborate on innovative ventures. Join me in the world of endless possibilities." />
+        <meta
+          name="description"
+          content="Showcasing my GitHub-inspired portfolio. Explore my coding prowess and project highlights. Unleash your curiosity as you delve into my code repositories. Let's connect and collaborate on innovative ventures. Join me in the world of endless possibilities."
+        />
         <meta
           name="keywords"
           content="steven san, steven, san, web developer, steven web developer, steven san web developer, steven portfolio, steven san portfolio, portfolio"
